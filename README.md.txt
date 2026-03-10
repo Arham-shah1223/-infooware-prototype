@@ -1,22 +1,23 @@
-# Infooware Edu Prototype – PDF to Slides & Video
+# Infooware Edu Prototype — PDF to Slides & Video
 
 ## Project Overview
 This project converts a PDF document into:
-1. A short slide deck explaining key concepts.
-2. A short video generated from the slides.
+1. A visual slide deck (PowerPoint)
+2. A short animated explainer video
 
-Pipeline:
-PDF → Text Extraction → Summarization → Slides → Video
+The system extracts key points from a PDF and automatically generates slides and a short video explanation.
 
 ---
 
-## Tech Stack
+## Technologies Used
 
 - Python
 - pdfplumber
 - python-pptx
 - moviepy
 - pillow
+- pyttsx3
+- nltk
 
 ---
 
@@ -41,20 +42,15 @@ infooware-prototype
 ├── requirements.txt
 └── README.md
 
-
 ---
 
-## Installation
+## How to Run
 
 Install dependencies:
 
 pip install -r requirements.txt
 
----
-
-## Run the Project
-
-Run the pipeline using:
+Run the pipeline:
 
 python run_pipeline.py --input input/sample.pdf --outdir output
 
@@ -62,28 +58,17 @@ python run_pipeline.py --input input/sample.pdf --outdir output
 
 ## Output
 
-The pipeline generates:
+The program generates:
 
-slides.pptx → PowerPoint slides summarizing the PDF
-
-video.mp4 → Short video created from the slides
-
----
-
-## Example
-
-Input:
-
-input/sample.pdf
-
-Output:
-
-output/slides.pptx
-
-output/video.mp4
+- slides.pptx → Visual slide presentation
+- video.mp4 → Short animated video from slides
 
 ---
 
-## Author
+## Example Use Case
 
-Arham Shah
+This prototype can be used for:
+
+- Educational content generation
+- Automated lecture summarization
+- Quick learning material creation
